@@ -142,6 +142,46 @@
     animation: fadeUp 1.4s cubic-bezier(0.16, 1, 0.3, 1) 1.4s forwards;
   }
 
+
+  /* ─── Group link ─── */
+  .grp {
+    text-align: center;
+    margin-top: 34px;
+    opacity: 0;
+    animation: fadeUp 1.4s cubic-bezier(0.16, 1, 0.3, 1) 1.9s forwards;
+  }
+
+  .grp a {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--white-faint);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.18);
+    padding-bottom: 4px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+  }
+
+  .grp a:hover {
+    color: var(--green-bright);
+    border-color: var(--green-dim);
+  }
+
+  .grpnote {
+    margin-top: 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--footer-text);
+    text-align: center;
+    opacity: 0;
+    animation: fadeUp 1.4s cubic-bezier(0.16, 1, 0.3, 1) 2.1s forwards;
+  }
+
   /* ─── Footer ─── */
   footer {
     position: relative;
@@ -221,6 +261,9 @@
     <p class="tagline">Systematic trading signals, precisely cultivated.</p>
 
     <p class="sub-tagline">Institutional-grade intelligence for independent investors.</p>
+
+    <div class="grp"><a href="https://kodamatrade.com/">Kodama &middot; Subscriber Research Desk</a></div>
+    <div class="grpnote">Kodama is a Bonsai Trading Ltd. company</div>
   </main>
 
   <footer>
